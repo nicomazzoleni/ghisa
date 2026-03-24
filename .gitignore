@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Xcode
+ios/build/
+ios/DerivedData/
+ios/*.xcuserstate
+ios/**/*.xcuserstate
+ios/**/*.xcuserdatad/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+xcuserdata/
+
+# Swift Package Manager
+ios/.build/
+ios/Packages/
+
+# Backend
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/coverage/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local tool configs
+.claude/
+.xcodebuildmcp/

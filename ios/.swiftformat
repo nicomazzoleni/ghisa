@@ -1,0 +1,45 @@
+# SwiftFormat Configuration for GHISA
+# Run: swiftformat ios/GHISA/
+
+# Format options
+--swiftversion 6.0
+--indent 4
+--indentcase true
+--trimwhitespace always
+--voidtype void
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--wrapconditions after-first
+--maxwidth 120
+--semicolons never
+--commas always
+--stripunusedargs closure-only
+--ifdef no-indent
+--importgrouping alpha
+--operatorfunc spaced
+--self init-only
+--selfrequired
+--header strip
+--marktypes never
+--extensionacl on-declarations
+
+# Rules to enable
+--enable blankLineAfterImports
+--enable blankLinesBetweenScopes
+--enable sortImports
+--enable consecutiveSpaces
+--enable duplicateImports
+--enable redundantSelf
+--enable redundantReturn
+--enable redundantParens
+--enable trailingCommas
+--enable isEmpty
+--enable wrapMultilineStatementBraces
+
+# Rules to disable
+--disable acronyms
+--disable wrapSwitchCases
+
+# Excluded paths
+--exclude DerivedData,*.build,.build

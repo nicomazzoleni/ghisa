@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GHISA V1 — Data Model</title>
+  <style>
+    body {
+      background: #0d1117;
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    p.sub {
+      font-size: 13px;
+      color: #8b949e;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    .mermaid {
+      display: flex;
+      justify-content: center;
+    }
+    /* override mermaid text colours for dark bg */
+    .mermaid svg {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>GHISA V1 — Schema Diagram</h1>
+  <p class="sub">SwiftData on-device data model. All IDs are UUIDs. Hover to highlight relationships.</p>
+
+  <pre class="mermaid">
+erDiagram
+
+    %% ── 1. User Profile ──────────────────────────
+    users {
+        UUID id PK
+        String name
+        Int age
+        String gender
+        Float height_cm
+        Float weight_kg
+        String unit_system
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    %% ── 2. Training Module ───────────────────────
+    exercises {
+        UUID id PK
+        UUID user_id FK
+        String name
+        StringArray muscle_groups
+        String movement_type
+        Boolean is_archived
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    exercise_field_definitions {
+        UUID id PK
+        UUID exercise_id FK
+        String name
+        String field_type
+        String unit
+        StringArray select_options
+        String system_key
+        Int sort_order
+        Boolean is_active
+        Boolean is_default
+        DateTime created_at
+    }
+
+    workouts {
+        UUID id PK
+        UUID user_id FK
+        String status
+        Date date
+        DateTime started_at
+        DateTime ended_at
+        Int duration_minutes
+        Text notes
+        String location
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    workout_templates {
+        UUID id PK
+        UUID user_id FK
+        String name
+        Text notes
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    workout_template_exercises {
+        UUID id PK
+        UUID template_id FK
+        UUID exercise_id FK
+        Int sort_order
+        Int superset_group
+        Int target_sets
+        Text notes
+    }
+
+    workout_template_field_targets {
+        UUID id PK
+        UUID template_exercise_id FK
+        UUID field_definition_id FK
+        Float target_value_number
+        String target_value_text
+    }
+
+    workout_exercises {
+        UUID id PK
+        UUID workout_id FK
+        UUID exercise_id FK
+        Int sort_order
+        Int superset_group
+        Text notes
+        DateTime created_at
+    }
+
+    workout_sets {
+        UUID id PK
+        UUID workout_exercise_id FK
+        Int set_number
+        Text notes
+        DateTime created_at
+    }
+
+    workout_set_values {
+        UUID id PK
+        UUID workout_set_id FK
+        UUID field_definition_id FK
+        Float value_number
+        String value_text
+        Boolean value_toggle
+    }
+
+    flags {
+        UUID id PK
+        UUID user_id FK
+        String name
+        String color
+        String icon
+        String scope
+        DateTime created_at
+    }
+
+    flag_assignments {
+        UUID id PK
+        UUID flag_id FK
+        UUID workout_id FK
+        UUID workout_exercise_id FK
+        UUID workout_set_id FK
+        DateTime created_at
+    }
+
+    %% ── 3. Nutrition Module ──────────────────────
+    nutrient_definitions {
+        UUID id PK
+        UUID user_id FK
+        String name
+        String unit
+        Boolean is_default
+        Int sort_order
+        Boolean is_visible
+        String api_key
+        DateTime created_at
+    }
+
+    food_items {
+        UUID id PK
+        UUID user_id FK
+        String external_id
+        String barcode
+        String name
+        String brand
+        Float serving_size_g
+        String serving_unit
+        Boolean is_favorite
+        DateTime last_used_at
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    food_item_nutrients {
+        UUID id PK
+        UUID food_item_id FK
+        UUID nutrient_definition_id FK
+        Float value_per_serving
+    }
+
+    recipes {
+        UUID id PK
+        UUID user_id FK
+        String name
+        Int servings
+        Text notes
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    recipe_ingredients {
+        UUID id PK
+        UUID recipe_id FK
+        UUID food_item_id FK
+        Float quantity
+        Int sort_order
+    }
+
+    meal_categories {
+        UUID id PK
+        UUID user_id FK
+        String name
+        Int sort_order
+        Boolean is_default
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    meal_entries {
+        UUID id PK
+        UUID user_id FK
+        Date date
+        UUID meal_category_id FK
+        UUID food_item_id FK
+        UUID recipe_id FK
+        Float quantity
+        DateTime logged_at
+        Text notes
+        DateTime created_at
+    }
+
+    meal_templates {
+        UUID id PK
+        UUID user_id FK
+        String name
+        UUID meal_category_id FK
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    meal_template_items {
+        UUID id PK
+        UUID meal_template_id FK
+        UUID food_item_id FK
+        UUID recipe_id FK
+        Float quantity
+        Int sort_order
+    }
+
+    nutrition_targets {
+        UUID id PK
+        UUID user_id FK
+        UUID nutrient_definition_id FK
+        Float target_value
+        DateTime updated_at
+    }
+
+    %% ── 4. Lifestyle Module ──────────────────────
+    daily_logs {
+        UUID id PK
+        UUID user_id FK
+        Date date
+        Float sleep_hours
+        Int sleep_deep_minutes
+        Int sleep_core_minutes
+        Int sleep_rem_minutes
+        Int steps
+        Int resting_heart_rate
+        Float hrv
+        Float active_energy_kcal
+        Float walking_distance_km
+        Text notes
+        DateTime created_at
+        DateTime updated_at
+    }
+
+    daily_log_field_definitions {
+        UUID id PK
+        UUID user_id FK
+        String name
+        String field_type
+        String unit
+        String system_key
+        Int sort_order
+        Boolean is_active
+        Boolean is_default
+        DateTime created_at
+    }
+
+    daily_log_values {
+        UUID id PK
+        UUID daily_log_id FK
+        UUID field_definition_id FK
+        Float value_number
+        String value_text
+        Boolean value_toggle
+    }
+
+    %% ── 5. Correlation Engine ────────────────────
+    correlation_results {
+        UUID id PK
+        UUID user_id FK
+        String target_variable
+        String factor_variable
+        String test_method
+        Int lag_days
+        Float effect_size
+        Float p_value
+        Int sample_size
+        Float mean_high
+        Float mean_low
+        String effect_description
+        String confidence_badge
+        Boolean is_significant
+        Float data_completeness
+        DateTime computed_at
+    }
+
+    %% ── Relationships ────────────────────────────
+
+    %% User owns everything
+    users ||--o{ exercises : "has"
+    users ||--o{ workouts : "has"
+    users ||--o{ workout_templates : "has"
+    users ||--o{ flags : "has"
+    users ||--o{ nutrient_definitions : "defines"
+    users ||--o{ food_items : "creates"
+    users ||--o{ recipes : "has"
+    users ||--o{ meal_categories : "has"
+    users ||--o{ meal_entries : "has"
+    users ||--o{ meal_templates : "has"
+    users ||--o{ nutrition_targets : "has"
+    users ||--o{ daily_log_field_definitions : "defines"
+    users ||--o{ daily_logs : "has"
+    users ||--o{ correlation_results : "has"
+
+    %% Training
+    exercises ||--o{ exercise_field_definitions : "defines"
+    exercises ||--o{ workout_exercises : "used in"
+    exercises ||--o{ workout_template_exercises : "used in"
+
+    workouts ||--o{ workout_exercises : "contains"
+    workout_exercises ||--o{ workout_sets : "contains"
+    workout_sets ||--o{ workout_set_values : "has"
+    exercise_field_definitions ||--o{ workout_set_values : "defines"
+
+    workout_templates ||--o{ workout_template_exercises : "contains"
+    workout_template_exercises ||--o{ workout_template_field_targets : "has"
+    exercise_field_definitions ||--o{ workout_template_field_targets : "defines"
+
+    flags ||--o{ flag_assignments : "applied via"
+    workouts ||--o{ flag_assignments : "tagged"
+    workout_exercises ||--o{ flag_assignments : "tagged"
+    workout_sets ||--o{ flag_assignments : "tagged"
+
+    %% Nutrition
+    nutrient_definitions ||--o{ food_item_nutrients : "values"
+    nutrient_definitions ||--o{ nutrition_targets : "target for"
+    food_items ||--o{ food_item_nutrients : "has"
+
+    recipes ||--o{ recipe_ingredients : "contains"
+    food_items ||--o{ recipe_ingredients : "used in"
+
+    meal_categories ||--o{ meal_entries : "groups"
+    food_items ||--o{ meal_entries : "logged as"
+    recipes ||--o{ meal_entries : "logged as"
+
+    meal_categories ||--o{ meal_templates : "defaults to"
+    meal_templates ||--o{ meal_template_items : "contains"
+    food_items ||--o{ meal_template_items : "used in"
+    recipes ||--o{ meal_template_items : "used in"
+
+    %% Lifestyle
+    daily_logs ||--o{ daily_log_values : "has"
+    daily_log_field_definitions ||--o{ daily_log_values : "defines"
+  </pre>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      er: {
+        layoutDirection: 'TB',
+        entityPadding: 12,
+        fontSize: 12,
+        useMaxWidth: true
+      }
+    });
+  </script>
+</body>
+</html>
