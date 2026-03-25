@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		03D8761BBD595A7150E53434 /* ExerciseFieldDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32329E52A175AB27C2F7B8D /* ExerciseFieldDefinition.swift */; };
+		03E540619A0940A15D8B39E7 /* NutritionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42374BDAAF1C77BBBFB587B8 /* NutritionSection.swift */; };
 		0753711D19844D6D02604055 /* DailyLogValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F1D75E658F0F6E3D6D435 /* DailyLogValue.swift */; };
 		0E80AB6ABED3ABA3A9A911FB /* DailyLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3019855A88BC355737B55E7 /* DailyLogTests.swift */; };
 		111A187E9088E31709B55F20 /* ExerciseFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5ACC5CDD5A55B63A8C0A5 /* ExerciseFieldRow.swift */; };
 		1141F2B4628E5D1100FA655E /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D12CB28977033981A0757A3 /* Workout.swift */; };
 		134927A698E4A256AC2837DA /* ExerciseHistorySessionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309792B51FED13D35BDCA25 /* ExerciseHistorySessionCard.swift */; };
+		136F45CDB1C31B8658FE0BC3 /* CreateCustomFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915949E2A06491AD515D10F3 /* CreateCustomFoodView.swift */; };
 		1A07BC3C0223C9B23B5D916A /* InsightsPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A201A737696A27E4FEDEAB0E /* InsightsPlaceholderView.swift */; };
 		1A782BB89FFBDF4EDB0BAC46 /* WorkoutTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6830C7403FBA6D3728910338 /* WorkoutTemplate.swift */; };
 		1DDE217CE12440CA2D409A68 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7533EB724383793B695DC7 /* DailyLog.swift */; };
 		1EEEDB1EA53EC4BE906BFADF /* NutritionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717EB7BCD122E41D402B7055 /* NutritionTests.swift */; };
+		20C84A30B42FB733B1775221 /* NutritionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C4CD1800CEBD0D23FD748 /* NutritionService.swift */; };
 		21CD89A4272311544040251B /* ExerciseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFFD988529B2B65E5151F46 /* ExerciseServiceTests.swift */; };
 		234D00BA42131C6002611525 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10B2CC46C6A736399751C2 /* User.swift */; };
 		2499DB22EA6CB87E3D21BA72 /* WorkoutTemplateExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881C4E022E33425D88BA478 /* WorkoutTemplateExercise.swift */; };
@@ -26,6 +29,7 @@
 		2C390778D67AE2F11B8DCE08 /* FlagLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E7E02E0E6A24FF98520DB /* FlagLibraryView.swift */; };
 		2CD4372D473C99FF0C41A428 /* WorkoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59C539424D8387B58F4526 /* WorkoutService.swift */; };
 		2EA34EB20EA27A195F5C8FCB /* SaveAsRoutineSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DF4A2B823E487B2369BBF9 /* SaveAsRoutineSheet.swift */; };
+		335B4364B2E950D63486E834 /* NutritionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42374BDAAF1C77BBBFB587B8 /* NutritionSection.swift */; };
 		3647D1EBE217DA06DC805CBC /* ExerciseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C10FA0BC03CBF95BB07776 /* ExerciseDetailViewModel.swift */; };
 		36FE453C5DAE29DACBA6F0B7 /* ContentRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A405FC623E55B7C3DA2BABB /* ContentRoot.swift */; };
 		387A652DBC65180E29802771 /* WorkoutHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9094BAB482A65840FDF5A84 /* WorkoutHistoryListView.swift */; };
@@ -38,16 +42,20 @@
 		42456EEF1531A6FEC3065A6D /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E19C17DA878319D778464A /* ExerciseDetailView.swift */; };
 		460CDA83CA8B14F1BD7C576C /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E148F070448C0838AB3D184 /* Exercise.swift */; };
 		48A05B708F99BB85611BB6B7 /* FlagBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3848882209330F7B52E8B /* FlagBadge.swift */; };
-		4B00A25CCF931AFA89D245D9 /* SupersetGroupIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811B6F33AEBD93F1528B5280 /* SupersetGroupIndicator.swift */; };
 		49721A421DD9183BD512559D /* RecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764C35D76F3028651165642 /* RecipeIngredient.swift */; };
 		49BCD7CCD46669663F552588 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376E9389989F11BBFA2FF50 /* MainTabView.swift */; };
 		4A205F1B84A811756887F936 /* ExerciseLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873DCF75BC29FFE105AC690F /* ExerciseLibraryViewModel.swift */; };
 		4A726A90AD1CACEEBC418817 /* RoutineFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC72A47C56B131B2207E887 /* RoutineFormViewModel.swift */; };
+		4B00A25CCF931AFA89D245D9 /* SupersetGroupIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811B6F33AEBD93F1528B5280 /* SupersetGroupIndicator.swift */; };
+		4B4A4FB1A8A0C224F589D61B /* FoodSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9443AA59CDF244E28E4E1 /* FoodSearchViewModel.swift */; };
 		4B91775048BEF771120EF599 /* MealCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A0F91D16E396F061CB6A5 /* MealCategory.swift */; };
 		4BCD5E8880597FEE81569064 /* TrainingPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B4DD8F37B4AEC869CA7191 /* TrainingPlaceholderView.swift */; };
+		4CA6457C1C842BB5EBDBD964 /* SupersetHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BB89C7B3B45AA341EBBCB /* SupersetHelpers.swift */; };
 		4F7EE3E0669C021DC07611C5 /* ExercisePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3DCC9EA9AAF7D2AA0A9DE /* ExercisePickerView.swift */; };
 		4FA5225DFABA6C33FC2097C5 /* RoutineFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4ED101E40DA0A6D935689 /* RoutineFormView.swift */; };
 		50CD779C092DD89A413BFB44 /* WorkoutSetValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F2DA5D0DE1B25FBF15A14 /* WorkoutSetValue.swift */; };
+		52EB40CB96830CEDF3897035 /* MealEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85164F188DC93DD20204A011 /* MealEntryRow.swift */; };
+		53B143BAA66F0951EAA3152A /* MealCategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD684CE2B164CB0055137D98 /* MealCategoryCard.swift */; };
 		56F63306EE685B28DC87ACCF /* ExerciseFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B437AB0555649DD7F958C5 /* ExerciseFormViewModel.swift */; };
 		585366FD36FB9C18007D16AD /* DailyLogPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E705339ABB2E7B45380AC /* DailyLogPlaceholderView.swift */; };
 		5D4EB7BD29C679AC007F0DE8 /* HealthKitMetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85C568C03C63AFD4FB3333 /* HealthKitMetricCard.swift */; };
@@ -61,9 +69,11 @@
 		7128C7127716DA69F637FFA4 /* ColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3BD597064318230B67BE8F /* ColorHexTests.swift */; };
 		7166052A2198B75D18144398 /* ExerciseHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB269FA17BDA801375DD33A /* ExerciseHistoryView.swift */; };
 		763403FE6F1C6AEE38343C93 /* FoodItemNutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8AE44808CD6360D724D03 /* FoodItemNutrient.swift */; };
+		79A04FD9900176C38007EFB4 /* MealEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85164F188DC93DD20204A011 /* MealEntryRow.swift */; };
 		79EF3D8D3DAA295F8FF68AC2 /* WorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588015204163D7A248A23F1 /* WorkoutTests.swift */; };
 		7C18B651A6974D6B07E4596A /* CustomFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75E8E43F4F035CE8982C131 /* CustomFieldRow.swift */; };
 		7D4C7DC6F49A46E2A6649D3E /* SmokeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110CCF07C8A6CE641A4C4A6 /* SmokeTest.swift */; };
+		7D6F40A78551AB60E104731D /* MealCategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD684CE2B164CB0055137D98 /* MealCategoryCard.swift */; };
 		7FAF770A408BACBCF360BE47 /* ComboBoxField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1A25B31FB0628230DACBF6 /* ComboBoxField.swift */; };
 		86630856C3016F484269CFFC /* ActiveWorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F3CD2075B5A3F82C812AE9 /* ActiveWorkoutViewModel.swift */; };
 		88593646D3D89BC178545FD5 /* ExerciseFieldDefinitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1FBC270A3DC5C57EE1EF98 /* ExerciseFieldDefinitionTests.swift */; };
@@ -72,9 +82,13 @@
 		906BCE83CDC7A9B2A3F41125 /* DailyLogServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83686CDA7389144B1139743 /* DailyLogServiceTests.swift */; };
 		91061D1BAB61E7364F37C16D /* TestModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652ABE892C10950B57A6A33E /* TestModelContainer.swift */; };
 		932A85E0FCACE078D445B96C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8535713650AD34540BA78160 /* Config.swift */; };
+		9373400FAB70F56F76F70515 /* NutritionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C4CD1800CEBD0D23FD748 /* NutritionService.swift */; };
+		9BB2447286754245F3D9017F /* FoodSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9443AA59CDF244E28E4E1 /* FoodSearchViewModel.swift */; };
 		9D6D9AB558731AB9C679D3B0 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF131E6CD012DB1E3384BE8B /* SyncService.swift */; };
 		9E899BF222D49E5694920BB4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9241B76CFE703B00628490B1 /* APIClient.swift */; };
 		9FF0A54823724A4F3A6B7863 /* TrainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D70DCA9B90955E650FD1D /* TrainTabView.swift */; };
+		A3974471ABE84840AE8D7DFB /* FoodDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C54BD4A761406AF4140DF6 /* FoodDetailSheet.swift */; };
+		A4B71C23DE9F4A1B8C5E6D70 /* EditMealEntrySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A82F1D7C3B49E0A1D2F8B4 /* EditMealEntrySheet.swift */; };
 		A39FA97C7445B32ED97A76AD /* TrainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9D07751E6205268FDE5CB /* TrainTabViewModel.swift */; };
 		AA32FDD063C9F96D3CF44E92 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE4C95FB44AC3E4794720A /* Theme.swift */; };
 		AC0DF86B37524E383EF50D7E /* WorkoutTemplateFieldTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01ABF1D0E46474B9EC6230 /* WorkoutTemplateFieldTarget.swift */; };
@@ -82,8 +96,13 @@
 		B2641A78FC84FD5E540935C5 /* ProfilePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E091E59768469D1B17C199 /* ProfilePlaceholderView.swift */; };
 		B369177E51FC6E41DB7D840B /* CorrelationResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C7F790257E5AC2EDC50A3A /* CorrelationResultTests.swift */; };
 		B49C7F56E28AABCA83D84725 /* FieldValueInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C7F7E4FE5D26296B92432 /* FieldValueInput.swift */; };
+		B5BB455594CCD486F230454C /* FoodSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F94EE5A2ECD8E2397E4805 /* FoodSearchView.swift */; };
 		B5D4A4C2AE6FEC4CB07E4C47 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1648BFA6633E2392B51E460 /* CardView.swift */; };
+		BA1844F7B8FCD7B0EC5D87AD /* OpenFoodFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F94CFDAA1D19980004CF93 /* OpenFoodFactsService.swift */; };
 		BCF8280C7EB94EA8154E9B59 /* DailyLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519016E1E8CD149AC7F0E482 /* DailyLogView.swift */; };
+		BE2E42FA8B74E94F430C7245 /* AddMealEntrySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D4A648FD87B528FF50374 /* AddMealEntrySheet.swift */; };
+		BEDA4977A3EF53CEACCA816D /* FoodDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C54BD4A761406AF4140DF6 /* FoodDetailSheet.swift */; };
+		C1F93E5A2B8D4C7F9E0A3D16 /* EditMealEntrySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A82F1D7C3B49E0A1D2F8B4 /* EditMealEntrySheet.swift */; };
 		BF1542B923CA777BD7853F4A /* WorkoutExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F65AF7E9AB2CDCF7EC719 /* WorkoutExercise.swift */; };
 		BF1FD2A072CC359F303AAECC /* WorkoutHistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0E4A81230306BEF66EA64 /* WorkoutHistoryRow.swift */; };
 		C2AEC1BF1C0A7D19FC304821 /* DataSeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FC5F800560F6E081DBCA46 /* DataSeedService.swift */; };
@@ -103,20 +122,23 @@
 		D70FF73B135BF4FD1762B779 /* MealEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D065A59814D64049AA8C1B /* MealEntry.swift */; };
 		D7F9C629AF3DB5DC573B871F /* WorkoutSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E394911A1366E240E053B /* WorkoutSet.swift */; };
 		D845EFD797BCEFC9EAAB9B9B /* FieldFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32D4E5912F8D27E199B37B3 /* FieldFormatting.swift */; };
-		4CA6457C1C842BB5EBDBD964 /* SupersetHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BB89C7B3B45AA341EBBCB /* SupersetHelpers.swift */; };
 		DAAD70AE0802FB273ED7C8EF /* ExerciseLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EB50C5E457B420ACD6C8B3 /* ExerciseLibraryView.swift */; };
 		DCCD3DC4B457552661D2B403 /* ExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084C2CAB9586A57D5F325CB2 /* ExerciseService.swift */; };
 		DD05E94173B780D423F2D47C /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402702F264C4F3B244307DE6 /* Color+Hex.swift */; };
 		DF2618CBF63048AA49D58292 /* WorkoutExerciseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6AA207A6B51ACBA457FBC5 /* WorkoutExerciseCard.swift */; };
 		E313D15B22C6C639CE44D3BC /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA938A25C1348186156F0E1 /* HealthKitService.swift */; };
+		E48A40A2B0D5EF90F11E21B5 /* OpenFoodFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F94CFDAA1D19980004CF93 /* OpenFoodFactsService.swift */; };
+		E4994AAA88655A92E06E203E /* CreateCustomFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915949E2A06491AD515D10F3 /* CreateCustomFoodView.swift */; };
 		E5B779BD8F31A3A24D002DC4 /* FlagPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE896C827F4A0E71A85C2A7 /* FlagPicker.swift */; };
 		E612336C073A08FBEEE32873 /* FlagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04984F5B52E8142045D16DC /* FlagService.swift */; };
 		E8F201E30EAC9050BA6EF739 /* FlagAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F19BBFEB5A320718481317 /* FlagAssignment.swift */; };
 		E9EF4F5843E57A49CFC17EA5 /* HealthKitMetricGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E2D8ABEFB1BCA5E2F14653 /* HealthKitMetricGrid.swift */; };
 		E9FBE6FAD4B683BC3803B477 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353883404B13C867C2CB64C3 /* FoodItem.swift */; };
 		EC53991905A14F51D0DC6CB2 /* RoutineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BF02246892413A68952F3B /* RoutineListView.swift */; };
+		EF0D464FA8454B253EC2287B /* FoodSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F94EE5A2ECD8E2397E4805 /* FoodSearchView.swift */; };
 		F0212D36BA75EF4452716FDE /* DailyLogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED3B9330AD61D84A7C0F85 /* DailyLogService.swift */; };
 		F18EBF1599ED681D77AA2FEF /* DailyLogFieldDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786B0A5FF17361A8B4B8678 /* DailyLogFieldDefinition.swift */; };
+		F21C4E85AEBFA4ECCAB245AB /* AddMealEntrySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D4A648FD87B528FF50374 /* AddMealEntrySheet.swift */; };
 		F369597C0E521076C05B5BDD /* FlagServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF458A327E6FF397467A1FE /* FlagServiceTests.swift */; };
 		F9E7A3C399553D5C18352657 /* FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED14ED7BC6C40A68EE203B96 /* FlagTests.swift */; };
 		FC9BE7858288E3A9370972B8 /* ActiveWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81F2FF4D6B0BA7AE5C450F /* ActiveWorkoutView.swift */; };
@@ -141,6 +163,7 @@
 		0588015204163D7A248A23F1 /* WorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTests.swift; sourceTree = "<group>"; };
 		06FC5F800560F6E081DBCA46 /* DataSeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSeedService.swift; sourceTree = "<group>"; };
 		084C2CAB9586A57D5F325CB2 /* ExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseService.swift; sourceTree = "<group>"; };
+		08F94CFDAA1D19980004CF93 /* OpenFoodFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenFoodFactsService.swift; path = GHISA/Services/OpenFoodFactsService.swift; sourceTree = SOURCE_ROOT; };
 		09C9A5F024C71299FC52E135 /* RoutineExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineExerciseRow.swift; sourceTree = "<group>"; };
 		0E59C539424D8387B58F4526 /* WorkoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutService.swift; sourceTree = "<group>"; };
 		171B9639034C6E7CE66E9E5F /* SetEntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetEntryRow.swift; sourceTree = "<group>"; };
@@ -151,6 +174,7 @@
 		1C3CB29739A08C2042721C2E /* ExerciseProgressChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgressChart.swift; sourceTree = "<group>"; };
 		1C81F2FF4D6B0BA7AE5C450F /* ActiveWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWorkoutView.swift; sourceTree = "<group>"; };
 		1FD8AE44808CD6360D724D03 /* FoodItemNutrient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemNutrient.swift; sourceTree = "<group>"; };
+		22F94EE5A2ECD8E2397E4805 /* FoodSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodSearchView.swift; path = GHISA/Views/DailyLog/FoodSearchView.swift; sourceTree = SOURCE_ROOT; };
 		2BED3B9330AD61D84A7C0F85 /* DailyLogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogService.swift; sourceTree = "<group>"; };
 		2C15E429A46246267C288D5D /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
 		2CC72A47C56B131B2207E887 /* RoutineFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineFormViewModel.swift; sourceTree = "<group>"; };
@@ -162,11 +186,11 @@
 		3881C4E022E33425D88BA478 /* WorkoutTemplateExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTemplateExercise.swift; sourceTree = "<group>"; };
 		3A405FC623E55B7C3DA2BABB /* ContentRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRoot.swift; sourceTree = "<group>"; };
 		402702F264C4F3B244307DE6 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		42374BDAAF1C77BBBFB587B8 /* NutritionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NutritionSection.swift; path = GHISA/Views/DailyLog/NutritionSection.swift; sourceTree = SOURCE_ROOT; };
 		42FE4C95FB44AC3E4794720A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4415404E987A93D8014A892C /* ExerciseFormViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFormViewModelTests.swift; sourceTree = "<group>"; };
 		46B7A208F6EA6BEB9F88F172 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		46E3848882209330F7B52E8B /* FlagBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagBadge.swift; sourceTree = "<group>"; };
-		811B6F33AEBD93F1528B5280 /* SupersetGroupIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupersetGroupIndicator.swift; sourceTree = "<group>"; };
 		484C7F7E4FE5D26296B92432 /* FieldValueInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValueInput.swift; sourceTree = "<group>"; };
 		4AA938A25C1348186156F0E1 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		4CDADE91237491496414D3E9 /* GHISA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GHISA.entitlements; sourceTree = "<group>"; };
@@ -179,6 +203,9 @@
 		5786B0A5FF17361A8B4B8678 /* DailyLogFieldDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogFieldDefinition.swift; sourceTree = "<group>"; };
 		593D70DCA9B90955E650FD1D /* TrainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTabView.swift; sourceTree = "<group>"; };
 		5FF458A327E6FF397467A1FE /* FlagServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagServiceTests.swift; sourceTree = "<group>"; };
+		630C4CD1800CEBD0D23FD748 /* NutritionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NutritionService.swift; path = GHISA/Services/NutritionService.swift; sourceTree = SOURCE_ROOT; };
+		64C54BD4A761406AF4140DF6 /* FoodDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodDetailSheet.swift; path = GHISA/Views/DailyLog/FoodDetailSheet.swift; sourceTree = SOURCE_ROOT; };
+		E5A82F1D7C3B49E0A1D2F8B4 /* EditMealEntrySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditMealEntrySheet.swift; path = GHISA/Views/DailyLog/EditMealEntrySheet.swift; sourceTree = SOURCE_ROOT; };
 		652ABE892C10950B57A6A33E /* TestModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModelContainer.swift; sourceTree = "<group>"; };
 		66D065A59814D64049AA8C1B /* MealEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEntry.swift; sourceTree = "<group>"; };
 		66EB50C5E457B420ACD6C8B3 /* ExerciseLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLibraryView.swift; sourceTree = "<group>"; };
@@ -194,13 +221,16 @@
 		7A80BCCA53E7D6E97B5523FC /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		7C6443E7764CE9E127AAA3D4 /* ExerciseHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHistoryViewModel.swift; sourceTree = "<group>"; };
 		7E85C568C03C63AFD4FB3333 /* HealthKitMetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitMetricCard.swift; sourceTree = "<group>"; };
+		811B6F33AEBD93F1528B5280 /* SupersetGroupIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupersetGroupIndicator.swift; sourceTree = "<group>"; };
 		8309792B51FED13D35BDCA25 /* ExerciseHistorySessionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHistorySessionCard.swift; sourceTree = "<group>"; };
+		85164F188DC93DD20204A011 /* MealEntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealEntryRow.swift; path = GHISA/Views/DailyLog/MealEntryRow.swift; sourceTree = SOURCE_ROOT; };
 		8535713650AD34540BA78160 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		873DCF75BC29FFE105AC690F /* ExerciseLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLibraryViewModel.swift; sourceTree = "<group>"; };
 		88C10FA0BC03CBF95BB07776 /* ExerciseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewModel.swift; sourceTree = "<group>"; };
 		8A4B2D93C2E0A5B4930F54EC /* DataSeedServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSeedServiceTests.swift; sourceTree = "<group>"; };
 		8E148F070448C0838AB3D184 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		8E2E705339ABB2E7B45380AC /* DailyLogPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogPlaceholderView.swift; sourceTree = "<group>"; };
+		915949E2A06491AD515D10F3 /* CreateCustomFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateCustomFoodView.swift; path = GHISA/Views/DailyLog/CreateCustomFoodView.swift; sourceTree = SOURCE_ROOT; };
 		915EE433F9ABBE3BBC5ACACA /* GHISAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHISAApp.swift; sourceTree = "<group>"; };
 		921B1F99E81799BC48EF1BFB /* CorrelationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrelationEngine.swift; sourceTree = "<group>"; };
 		9241B76CFE703B00628490B1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -227,24 +257,27 @@
 		B6EB0813D264A7A58809B20E /* ExerciseLibraryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLibraryViewModelTests.swift; sourceTree = "<group>"; };
 		BDCD4898ADB439795877EC8A /* FlagFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagFormView.swift; sourceTree = "<group>"; };
 		BF131E6CD012DB1E3384BE8B /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		C0C9443AA59CDF244E28E4E1 /* FoodSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodSearchViewModel.swift; path = GHISA/ViewModels/FoodSearchViewModel.swift; sourceTree = SOURCE_ROOT; };
 		C1648BFA6633E2392B51E460 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C4F19BBFEB5A320718481317 /* FlagAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagAssignment.swift; sourceTree = "<group>"; };
+		C57D4A648FD87B528FF50374 /* AddMealEntrySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddMealEntrySheet.swift; path = GHISA/Views/DailyLog/AddMealEntrySheet.swift; sourceTree = SOURCE_ROOT; };
 		C587C314F183D73C188C28EC /* ExerciseDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewModelTests.swift; sourceTree = "<group>"; };
 		C5F00F78ADF8E5E255707546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C764C35D76F3028651165642 /* RecipeIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredient.swift; sourceTree = "<group>"; };
 		C9E2D8ABEFB1BCA5E2F14653 /* HealthKitMetricGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitMetricGrid.swift; sourceTree = "<group>"; };
 		CA0F1D75E658F0F6E3D6D435 /* DailyLogValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogValue.swift; sourceTree = "<group>"; };
 		CA10B2CC46C6A736399751C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CD684CE2B164CB0055137D98 /* MealCategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealCategoryCard.swift; path = GHISA/Views/DailyLog/MealCategoryCard.swift; sourceTree = SOURCE_ROOT; };
 		CD7533EB724383793B695DC7 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
 		CEB0259AE7EB7E7148CDA598 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		D32D4E5912F8D27E199B37B3 /* FieldFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldFormatting.swift; sourceTree = "<group>"; };
-		EB6BB89C7B3B45AA341EBBCB /* SupersetHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupersetHelpers.swift; sourceTree = "<group>"; };
 		D92E7E02E0E6A24FF98520DB /* FlagLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagLibraryView.swift; sourceTree = "<group>"; };
 		DB7141ED4D3DC7873E38DA51 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
 		DC9BD521E3D0F9D2789C482C /* CustomFieldsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldsSection.swift; sourceTree = "<group>"; };
 		DCB86E522F689EC70B495D60 /* ExerciseFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFormView.swift; sourceTree = "<group>"; };
 		DD1FBC270A3DC5C57EE1EF98 /* ExerciseFieldDefinitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFieldDefinitionTests.swift; sourceTree = "<group>"; };
 		E964A720D1C4739AE9580030 /* WorkoutTemplateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTemplateService.swift; sourceTree = "<group>"; };
+		EB6BB89C7B3B45AA341EBBCB /* SupersetHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupersetHelpers.swift; sourceTree = "<group>"; };
 		ECF0E4A81230306BEF66EA64 /* WorkoutHistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryRow.swift; sourceTree = "<group>"; };
 		ECF5ACC5CDD5A55B63A8C0A5 /* ExerciseFieldRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFieldRow.swift; sourceTree = "<group>"; };
 		ED14ED7BC6C40A68EE203B96 /* FlagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagTests.swift; sourceTree = "<group>"; };
@@ -328,6 +361,15 @@
 				0588015204163D7A248A23F1 /* WorkoutTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3B4049C19AB24CC26C5663CC /* GHISA/Services */ = {
+			isa = PBXGroup;
+			children = (
+				08F94CFDAA1D19980004CF93 /* OpenFoodFactsService.swift */,
+				630C4CD1800CEBD0D23FD748 /* NutritionService.swift */,
+			);
+			name = GHISA/Services;
 			sourceTree = "<group>";
 		};
 		3E9042DA9711DBA8DF234907 /* GHISATests */ = {
@@ -426,12 +468,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B6D34C48A82F4F9CCF4432D0 /* GHISA/ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C0C9443AA59CDF244E28E4E1 /* FoodSearchViewModel.swift */,
+			);
+			name = GHISA/ViewModels;
+			sourceTree = "<group>";
+		};
 		D582A1934C9F7E05AD61AB0C = {
 			isa = PBXGroup;
 			children = (
 				47E0283B27D7368BD6D38741 /* GHISA */,
 				3E9042DA9711DBA8DF234907 /* GHISATests */,
 				09A48DE093DB07D9256455C3 /* Products */,
+				3B4049C19AB24CC26C5663CC /* GHISA/Services */,
+				B6D34C48A82F4F9CCF4432D0 /* GHISA/ViewModels */,
+				DBDC4B4C894D2A567CFFAA01 /* GHISA/Views/DailyLog */,
 			);
 			sourceTree = "<group>";
 		};
@@ -474,6 +527,21 @@
 				FE01ABF1D0E46474B9EC6230 /* WorkoutTemplateFieldTarget.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DBDC4B4C894D2A567CFFAA01 /* GHISA/Views/DailyLog */ = {
+			isa = PBXGroup;
+			children = (
+				42374BDAAF1C77BBBFB587B8 /* NutritionSection.swift */,
+				CD684CE2B164CB0055137D98 /* MealCategoryCard.swift */,
+				85164F188DC93DD20204A011 /* MealEntryRow.swift */,
+				C57D4A648FD87B528FF50374 /* AddMealEntrySheet.swift */,
+				22F94EE5A2ECD8E2397E4805 /* FoodSearchView.swift */,
+				64C54BD4A761406AF4140DF6 /* FoodDetailSheet.swift */,
+				E5A82F1D7C3B49E0A1D2F8B4 /* EditMealEntrySheet.swift */,
+				915949E2A06491AD515D10F3 /* CreateCustomFoodView.swift */,
+			);
+			name = GHISA/Views/DailyLog;
 			sourceTree = "<group>";
 		};
 		DE7FFD017BA5B689BEE5ED21 /* Training */ = {
@@ -704,7 +772,18 @@
 				91061D1BAB61E7364F37C16D /* TestModelContainer.swift in Sources */,
 				8AE593D87848E95E871E0786 /* UserTests.swift in Sources */,
 				79EF3D8D3DAA295F8FF68AC2 /* WorkoutTests.swift in Sources */,
-			);
+				BA1844F7B8FCD7B0EC5D87AD /* OpenFoodFactsService.swift in Sources */,
+				9373400FAB70F56F76F70515 /* NutritionService.swift in Sources */,
+				9BB2447286754245F3D9017F /* FoodSearchViewModel.swift in Sources */,
+				335B4364B2E950D63486E834 /* NutritionSection.swift in Sources */,
+				7D6F40A78551AB60E104731D /* MealCategoryCard.swift in Sources */,
+				79A04FD9900176C38007EFB4 /* MealEntryRow.swift in Sources */,
+				BE2E42FA8B74E94F430C7245 /* AddMealEntrySheet.swift in Sources */,
+				EF0D464FA8454B253EC2287B /* FoodSearchView.swift in Sources */,
+				BEDA4977A3EF53CEACCA816D /* FoodDetailSheet.swift in Sources */,
+				C1F93E5A2B8D4C7F9E0A3D16 /* EditMealEntrySheet.swift in Sources */,
+				136F45CDB1C31B8658FE0BC3 /* CreateCustomFoodView.swift in Sources */,
+	);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C31356618B05C260DC8A4151 /* Sources */ = {
@@ -805,6 +884,17 @@
 				2499DB22EA6CB87E3D21BA72 /* WorkoutTemplateExercise.swift in Sources */,
 				AC0DF86B37524E383EF50D7E /* WorkoutTemplateFieldTarget.swift in Sources */,
 				C6DF810FF0DD47E65918313E /* WorkoutTemplateService.swift in Sources */,
+				E48A40A2B0D5EF90F11E21B5 /* OpenFoodFactsService.swift in Sources */,
+				20C84A30B42FB733B1775221 /* NutritionService.swift in Sources */,
+				4B4A4FB1A8A0C224F589D61B /* FoodSearchViewModel.swift in Sources */,
+				03E540619A0940A15D8B39E7 /* NutritionSection.swift in Sources */,
+				53B143BAA66F0951EAA3152A /* MealCategoryCard.swift in Sources */,
+				52EB40CB96830CEDF3897035 /* MealEntryRow.swift in Sources */,
+				F21C4E85AEBFA4ECCAB245AB /* AddMealEntrySheet.swift in Sources */,
+				B5BB455594CCD486F230454C /* FoodSearchView.swift in Sources */,
+				A3974471ABE84840AE8D7DFB /* FoodDetailSheet.swift in Sources */,
+				A4B71C23DE9F4A1B8C5E6D70 /* EditMealEntrySheet.swift in Sources */,
+				E4994AAA88655A92E06E203E /* CreateCustomFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,6 +924,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/GHISA/Services",
+					"$(SRCROOT)/GHISA/ViewModels",
+					"$(SRCROOT)/GHISA/Views/DailyLog",
 				);
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghisa.app;
@@ -913,6 +1008,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/GHISA/Services",
+					"$(SRCROOT)/GHISA/ViewModels",
+					"$(SRCROOT)/GHISA/Views/DailyLog",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghisa.app.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -930,6 +1030,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/GHISA/Services",
+					"$(SRCROOT)/GHISA/ViewModels",
+					"$(SRCROOT)/GHISA/Views/DailyLog",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghisa.app.tests;
 				SDKROOT = iphoneos;
@@ -1019,6 +1124,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/GHISA/Services",
+					"$(SRCROOT)/GHISA/ViewModels",
+					"$(SRCROOT)/GHISA/Views/DailyLog",
 				);
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghisa.app;

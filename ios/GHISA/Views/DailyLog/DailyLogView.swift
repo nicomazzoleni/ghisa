@@ -22,6 +22,7 @@ struct DailyLogView: View {
         ScrollView {
             VStack(spacing: Theme.Spacing.lg) {
                 healthKitSection(vm)
+                NutritionSection(viewModel: vm)
                 customFieldsSection(vm)
             }
             .padding(Theme.Spacing.lg)
@@ -37,6 +38,22 @@ struct DailyLogView: View {
                 vm.addField(name: name, fieldType: fieldType, unit: unit)
             }
             .presentationDetents([.medium])
+        }
+        .sheet(isPresented: Binding(
+            get: { vm.showAddMealSheet },
+            set: { vm.showAddMealSheet = $0 }
+        )) {
+            if let category = vm.selectedMealCategory, let user = fetchUser() {
+                AddMealEntrySheet(
+                    mealCategory: category,
+                    nutritionService: NutritionService(modelContext: modelContext),
+                    openFoodFactsService: OpenFoodFactsService(),
+                    user: user,
+                    nutrientDefinitions: vm.nutrientDefinitions,
+                    date: vm.selectedDate,
+                    onMealAdded: { vm.onMealAdded() }
+                )
+            }
         }
         .alert("Error", isPresented: Binding(
             get: { vm.errorMessage != nil },
@@ -95,9 +112,11 @@ struct DailyLogView: View {
         guard let user = fetchUser() else { return }
         let dailyLogService = DailyLogService(modelContext: modelContext)
         let healthKitService = HealthKitService()
+        let nutritionService = NutritionService(modelContext: modelContext)
         let vm = DailyLogViewModel(
             dailyLogService: dailyLogService,
             healthKitService: healthKitService,
+            nutritionService: nutritionService,
             user: user
         )
         viewModel = vm

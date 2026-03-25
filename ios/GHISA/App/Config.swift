@@ -27,6 +27,12 @@ enum AppConfig {
         static let maximumLagDays = 7
     }
 
+    enum OpenFoodFacts {
+        // swiftlint:disable:next force_unwrapping
+        static let baseURL = URL(string: "https://world.openfoodfacts.net")!
+        static let pageSize = 25
+    }
+
     enum Defaults {
         static let defaultUnitSystem = "metric"
         static let defaultMealCategories = ["Breakfast", "Lunch", "Dinner", "Snack"]

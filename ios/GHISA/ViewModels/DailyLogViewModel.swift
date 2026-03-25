@@ -12,17 +12,32 @@ final class DailyLogViewModel {
     var isImportingHistory = false
     var errorMessage: String?
 
+    // Nutrition state
+    var mealCategories: [MealCategory] = []
+    var mealEntriesByCategory: [UUID: [MealEntry]] = [:]
+    var dailyNutrientTotals: [UUID: Float] = [:]
+    var nutrientDefinitions: [NutrientDefinition] = []
+    var showAddMealSheet = false
+    var selectedMealCategory: MealCategory?
+
     private let dailyLogService: DailyLogService
     private let healthKitService: HealthKitService
+    private let nutritionService: NutritionService
     private let user: User
 
     var healthKitAuthRequested: Bool {
         healthKitService.isAuthorized
     }
 
-    init(dailyLogService: DailyLogService, healthKitService: HealthKitService, user: User) {
+    init(
+        dailyLogService: DailyLogService,
+        healthKitService: HealthKitService,
+        nutritionService: NutritionService,
+        user: User
+    ) {
         self.dailyLogService = dailyLogService
         self.healthKitService = healthKitService
+        self.nutritionService = nutritionService
         self.user = user
     }
 
@@ -66,6 +81,7 @@ final class DailyLogViewModel {
     func loadData() async {
         currentDailyLog = dailyLogService.fetchOrCreateDailyLog(for: selectedDate, user: user)
         customFields = dailyLogService.getActiveFields(for: user)
+        loadNutritionData()
 
         if healthKitAuthRequested {
             isLoadingHealthKit = true
@@ -137,5 +153,62 @@ final class DailyLogViewModel {
 
     func currentValue(for field: DailyLogFieldDefinition) -> DailyLogValue? {
         currentDailyLog?.values.first(where: { $0.fieldDefinition.id == field.id })
+    }
+
+    // MARK: - Nutrition
+
+    var nutritionSummaryText: String {
+        guard !nutrientDefinitions.isEmpty else { return "" }
+        let parts = nutrientDefinitions.compactMap { def -> String? in
+            let total = dailyNutrientTotals[def.id] ?? 0
+            let formatted = total < 10 ? String(format: "%.1f", total) : String(Int(total))
+            return "\(formatted)\(def.unit == "kcal" ? "" : "g") \(abbreviatedName(def))"
+        }
+        return parts.joined(separator: " · ")
+    }
+
+    func loadNutritionData() {
+        nutrientDefinitions = nutritionService.fetchVisibleNutrientDefinitions(for: user)
+        mealCategories = nutritionService.fetchMealCategories(for: user)
+
+        let entries = nutritionService.fetchMealEntries(for: selectedDate, user: user)
+        mealEntriesByCategory = nutritionService.groupEntriesByCategory(entries, categories: mealCategories)
+        dailyNutrientTotals = nutritionService.calculateDailyTotals(
+            entries: entries,
+            nutrientDefinitions: nutrientDefinitions
+        )
+    }
+
+    func deleteMealEntry(_ entry: MealEntry) {
+        nutritionService.deleteMealEntry(entry)
+        loadNutritionData()
+    }
+
+    func updateMealEntryQuantity(_ entry: MealEntry, quantity: Float) {
+        do {
+            try nutritionService.updateMealEntryQuantity(entry, quantity: quantity)
+            loadNutritionData()
+        } catch {
+            errorMessage = "Could not update quantity."
+        }
+    }
+
+    func openAddMealSheet(for category: MealCategory) {
+        selectedMealCategory = category
+        showAddMealSheet = true
+    }
+
+    func onMealAdded() {
+        loadNutritionData()
+    }
+
+    private func abbreviatedName(_ def: NutrientDefinition) -> String {
+        switch def.name.lowercased() {
+            case "calories": "kcal"
+            case "protein": "P"
+            case "carbs", "carbohydrates": "C"
+            case "fat": "F"
+            default: def.name
+        }
     }
 }

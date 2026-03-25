@@ -269,21 +269,23 @@ express, prisma/@prisma/client, zod, jsonwebtoken, bcryptjs, cors, helmet, doten
 
 | Module | Status | Notes |
 |--------|--------|-------|
-| Project setup | In progress | Docs complete, code scaffold not started |
-| Data model | Not started | SwiftData models + Prisma schema |
-| Training — exercise CRUD | Not started | |
-| Training — workout logging | Not started | |
-| Training — flags system | Not started | |
-| Training — history & PRs | Not started | |
-| Nutrition — food database | Not started | |
-| Nutrition — meal logging | Not started | |
-| Nutrition — recipes | Not started | |
-| Lifestyle — HealthKit | Not started | |
-| Lifestyle — manual entry | Not started | |
-| Correlation engine | Not started | |
-| Insights dashboard | Not started | |
-| Auth + user profile | Not started | |
-| Sync (local ↔ server) | Not started | |
+| Project setup | Done | Xcode project, folder structure, theme, error handling |
+| Data model | Done | All SwiftData models defined with relationships (26 models) |
+| Training — exercise CRUD | Done | Full CRUD, custom fields, muscle groups, archive/restore |
+| Training — workout logging | Done | Active logging, set/exercise management, finish/discard, resume |
+| Training — routines | Done | Templates, field targets, copy workout, save-as-routine |
+| Training — flags system | Done | CRUD, scoped flags, badges, picker; assignment UI needs wiring |
+| Training — history & PRs | Done | PR computation (weight, reps, e1RM), charts, session history |
+| Lifestyle — HealthKit | Done | Auth, daily fetch (sleep/steps/HR/HRV/energy), historical import |
+| Lifestyle — manual entry | Done | Custom fields (number/text/toggle), add/remove/reorder |
+| Daily Log UI | Done | Date nav, HealthKit cards, custom field input, auto-create |
+| Nutrition — food database | Not started | Models exist, no services or UI |
+| Nutrition — meal logging | Not started | Models exist, no services or UI |
+| Nutrition — recipes | Not started | Models exist, no services or UI |
+| Correlation engine | Not started | Stub service exists, no statistical logic |
+| Insights dashboard | Not started | Placeholder view only |
+| Auth + user profile | Not started | Placeholder view only |
+| Sync (local ↔ server) | Not started | Stub service only |
 | Barcode scanning | Not started | |
 
 ## When Starting a New Feature
