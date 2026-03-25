@@ -106,6 +106,10 @@
 		BF1542B923CA777BD7853F4A /* WorkoutExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F65AF7E9AB2CDCF7EC719 /* WorkoutExercise.swift */; };
 		BF1FD2A072CC359F303AAECC /* WorkoutHistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0E4A81230306BEF66EA64 /* WorkoutHistoryRow.swift */; };
 		C2AEC1BF1C0A7D19FC304821 /* DataSeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FC5F800560F6E081DBCA46 /* DataSeedService.swift */; };
+		C2AEC1BF1C0A7D19FC304822 /* DataSeedService+Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FC5F800560F6E081DBCA47 /* DataSeedService+Nutrition.swift */; };
+		C2AEC1BF1C0A7D19FC304823 /* DataSeedService+Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FC5F800560F6E081DBCA48 /* DataSeedService+Training.swift */; };
+		C2AEC1BF1C0A7D19FC304824 /* TrainingSeedConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FC5F800560F6E081DBCA49 /* TrainingSeedConfig.swift */; };
+		C2AEC1BF1C0A7D19FC304825 /* NutritionSeedConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FC5F800560F6E081DBCA50 /* NutritionSeedConfig.swift */; };
 		C52BB346AE2F073D0BB3DEB2 /* AddCustomFieldSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022381776A20D1F6AEF57301 /* AddCustomFieldSheet.swift */; };
 		C605C78A2CA71BBEB7EF0BE1 /* SetEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171B9639034C6E7CE66E9E5F /* SetEntryRow.swift */; };
 		C6866BDEF84FC0414461AB8B /* CorrelationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E655870DDD77576B7F19A61 /* CorrelationResult.swift */; };
@@ -162,6 +166,10 @@
 		03E19C17DA878319D778464A /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 		0588015204163D7A248A23F1 /* WorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTests.swift; sourceTree = "<group>"; };
 		06FC5F800560F6E081DBCA46 /* DataSeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSeedService.swift; sourceTree = "<group>"; };
+		06FC5F800560F6E081DBCA47 /* DataSeedService+Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSeedService+Nutrition.swift"; sourceTree = "<group>"; };
+		06FC5F800560F6E081DBCA48 /* DataSeedService+Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSeedService+Training.swift"; sourceTree = "<group>"; };
+		06FC5F800560F6E081DBCA49 /* TrainingSeedConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSeedConfig.swift; sourceTree = "<group>"; };
+		06FC5F800560F6E081DBCA50 /* NutritionSeedConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionSeedConfig.swift; sourceTree = "<group>"; };
 		084C2CAB9586A57D5F325CB2 /* ExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseService.swift; sourceTree = "<group>"; };
 		08F94CFDAA1D19980004CF93 /* OpenFoodFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenFoodFactsService.swift; path = GHISA/Services/OpenFoodFactsService.swift; sourceTree = SOURCE_ROOT; };
 		09C9A5F024C71299FC52E135 /* RoutineExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineExerciseRow.swift; sourceTree = "<group>"; };
@@ -330,6 +338,10 @@
 				921B1F99E81799BC48EF1BFB /* CorrelationEngine.swift */,
 				2BED3B9330AD61D84A7C0F85 /* DailyLogService.swift */,
 				06FC5F800560F6E081DBCA46 /* DataSeedService.swift */,
+				06FC5F800560F6E081DBCA47 /* DataSeedService+Nutrition.swift */,
+				06FC5F800560F6E081DBCA48 /* DataSeedService+Training.swift */,
+				06FC5F800560F6E081DBCA49 /* TrainingSeedConfig.swift */,
+				06FC5F800560F6E081DBCA50 /* NutritionSeedConfig.swift */,
 				084C2CAB9586A57D5F325CB2 /* ExerciseService.swift */,
 				F04984F5B52E8142045D16DC /* FlagService.swift */,
 				4AA938A25C1348186156F0E1 /* HealthKitService.swift */,
@@ -813,6 +825,10 @@
 				BCF8280C7EB94EA8154E9B59 /* DailyLogView.swift in Sources */,
 				3BCDFFEA524EA3B4F1605D1A /* DailyLogViewModel.swift in Sources */,
 				C2AEC1BF1C0A7D19FC304821 /* DataSeedService.swift in Sources */,
+				C2AEC1BF1C0A7D19FC304822 /* DataSeedService+Nutrition.swift in Sources */,
+				C2AEC1BF1C0A7D19FC304823 /* DataSeedService+Training.swift in Sources */,
+				C2AEC1BF1C0A7D19FC304824 /* TrainingSeedConfig.swift in Sources */,
+				C2AEC1BF1C0A7D19FC304825 /* NutritionSeedConfig.swift in Sources */,
 				460CDA83CA8B14F1BD7C576C /* Exercise.swift in Sources */,
 				42456EEF1531A6FEC3065A6D /* ExerciseDetailView.swift in Sources */,
 				3647D1EBE217DA06DC805CBC /* ExerciseDetailViewModel.swift in Sources */,

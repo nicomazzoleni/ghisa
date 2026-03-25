@@ -3,7 +3,7 @@ import SwiftData
 
 @Observable
 final class DataSeedService {
-    private let modelContext: ModelContext
+    let modelContext: ModelContext
 
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
