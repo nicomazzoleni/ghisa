@@ -282,7 +282,7 @@ express, prisma/@prisma/client, zod, jsonwebtoken, bcryptjs, cors, helmet, doten
 | Nutrition — food database | Not started | Models exist, no services or UI |
 | Nutrition — meal logging | Not started | Models exist, no services or UI |
 | Nutrition — recipes | Not started | Models exist, no services or UI |
-| Correlation engine | Not started | Stub service exists, no statistical logic |
+| Correlation engine | Phase 1 done | Stats engine, BH correction, data extraction, lag analysis, confidence badges, lifestyle seed data. No UI. |
 | Insights dashboard | Not started | Placeholder view only |
 | Auth + user profile | Not started | Placeholder view only |
 | Sync (local ↔ server) | Not started | Stub service only |

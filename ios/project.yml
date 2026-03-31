@@ -57,6 +57,10 @@ targets:
       - path: GHISATests
         excludes:
           - "**/.DS_Store"
+          - "Fixtures/**"
+      - path: GHISATests/Fixtures
+        buildPhase: resources
+        type: group
     dependencies:
       - target: GHISA
     settings:

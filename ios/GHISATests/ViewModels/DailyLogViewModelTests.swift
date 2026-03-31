@@ -75,9 +75,11 @@ struct DailyLogViewModelTests {
         let (context, user) = try TestModelContainer.makeContext()
         let dailyLogService = DailyLogService(modelContext: context)
         let healthKitService = HealthKitService()
+        let nutritionService = NutritionService(modelContext: context)
         return DailyLogViewModel(
             dailyLogService: dailyLogService,
             healthKitService: healthKitService,
+            nutritionService: nutritionService,
             user: user
         )
     }
